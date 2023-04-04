@@ -1,3 +1,14 @@
+// create a function which returns an RNA sequence from the given DNA sequence
+
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, "U"); 
+}
+  //"GCAT"  =>  "GCAU"//
+//You must use the backslashes to stipulate a global replace of T in the string, which is why the g bounds the backslash 
+
+
+// create a function which returns an RNA sequence from the given DNA sequence
+
 //Complete the solution so that it reverses the string passed into it. 
 
 //'cat' => 'tac'
