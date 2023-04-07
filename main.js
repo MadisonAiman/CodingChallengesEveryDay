@@ -1,3 +1,52 @@
+//
+
+sumArray = (array) => {
+  if (Array.isArray(array) && array.length > 2 && array.every((a) => typeof a === 'number')) {
+    array.sort((a, b) => a - b);
+    array.shift();
+    array.pop();
+    return array.reduce((a, b) =>  a + b);
+  } else {
+    return 0;
+  }
+}
+
+//or 
+
+// function sumArray(array) {
+//   if (array == null) {
+//     return 0;
+//   } else if (array.length < 2) {
+//     return 0;
+//   } else {
+//     array = array.sort(function(a,b) {return a - b;});
+//     var total = 0;
+//     for (var i = 1; i < array.length - 1; i++) {
+//       total += array[i];
+//     }
+//     return total;
+//   }
+// }
+
+//Your goal is to create a function that removes the first and last characters of a string. 
+//You're given one parameter, the original string.
+//You don't have to worry with strings with less than two characters.
+
+function removeChar(str) {
+  return str.slice(1, -1);
+}
+
+//or
+
+function removeChar(str){
+ //You got this!
+  str1 = str.split('');
+  str1.shift();
+  str1.pop();
+  return str1.join('');
+    
+};
+
 //Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
 function cockroachSpeed(s) {
   //multiply km/m by 27.7777777778
