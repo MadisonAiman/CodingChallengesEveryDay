@@ -1,3 +1,10 @@
+//Double the integer 
+
+function doubleInt(i){
+ i = i* 2
+  return i
+}
+
 // create a function which returns an RNA sequence from the given DNA sequence
 
 function DNAtoRNA(dna) {
@@ -17,8 +24,6 @@ function DNAtoRNA(dna) {
 function solution(str){
     return str.split("").reverse().join("");
 }
-
-
 
 //Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
