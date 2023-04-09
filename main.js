@@ -20,7 +20,7 @@ sumArray = (array) => {
   }
 }
 
-//or 
+//or this is an additional solution
 
 // function sumArray(array) {
 //   if (array == null) {
