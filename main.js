@@ -20,6 +20,50 @@ sumArray = (array) => {
   }
 }
 
+//This JavaScript code defines a function named sumArray that takes in an array of numbers as its input and returns the sum of all the elements in the array, excluding the smallest and largest elements.
+
+// Let's break down the code step by step:
+
+// javascript
+// Copy code
+// sumArray = (array) => {
+// This line defines an arrow function named sumArray that takes in an array as its input.
+
+// javascript
+// Copy code
+//   if (Array.isArray(array) && array.length > 2 && array.every((a) => typeof a === 'number')) {
+// This line checks if the input is a valid array by using three conditions:
+
+// The Array.isArray() method checks if the input is an array.
+// array.length > 2 checks if the array has at least three elements.
+// array.every((a) => typeof a === 'number') checks if all elements in the array are numbers.
+// If all conditions are true, the code inside the if block will be executed, otherwise the function will return 0.
+
+// css
+// Copy code
+//     array.sort((a, b) => a - b);
+// This line sorts the input array in ascending order using the Array.sort() method.
+
+//     array.shift();
+// This line removes the first element in the array, which is now the smallest element since the array was sorted in ascending order.
+
+
+//     array.pop();
+// This line removes the last element in the array, which is now the largest element since the array was sorted in ascending order.
+
+
+//     return array.reduce((a, b) =>  a + b);
+// This line calculates the sum of the remaining elements in the array using the Array.reduce() method and returns the result.
+
+// kotlin
+// Copy code
+//   } else {
+//     return 0;
+//   }
+// This line returns 0 if the input array is not valid.
+
+// Overall, the sumArray function takes in an array of numbers, checks if it's a valid input, sorts the array in ascending order, removes the smallest and largest elements, and returns the sum of the remaining elements.
+
 //or this is an additional solution
 
 // function sumArray(array) {
