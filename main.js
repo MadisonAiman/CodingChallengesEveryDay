@@ -1,3 +1,25 @@
+//create a function that takes in a name and spits out the first inital of each name as in Sam Harris => S.H and peter finely => P.F
+function abbrevName(name){
+
+  var nameArray = name.split(" ");
+  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
+ //parameters are to take in a name
+//Return/Results are to convert the name into intials
+//examples Sam Harris = S.H 
+//walkthrough: first we make a new variable name that accounts for splitting the first and last name into two groups
+//then we will need to sift through the characters based on the first index since we just want the first letter of the first name and the first letter of the last name
+//By making it an array like nameArray[0][0] this tells us to grab the first item in the array, Sam, and then grab the first letter which is S. 
+//Then we need to grab the second item in the array which is Harris and only grab the H. 
+//we use the + to concatenate or glue the results of S and H together with a period. 
+//We want this to be in upper case no matter what the user enters so we have the function toUPperCase() left empty. 
+//Finally, putting it all together, we return that value
+
+
+
+
+
+
 //Create a function with two arguments that will return an array of the first n multiples of x.
 
 //Assume both the given number and the number of times to count will be positive numbers greater than 0.
