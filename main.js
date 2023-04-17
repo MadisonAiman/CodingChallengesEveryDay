@@ -1,3 +1,10 @@
+//Make a simple function called greet that returns the most-famous "hello world!".
+
+function greet(word) {
+    return "hello world!";
+    }
+
+
 //create a function that takes in a name and spits out the first inital of each name as in Sam Harris => S.H and peter finely => P.F
 function abbrevName(name){
 
