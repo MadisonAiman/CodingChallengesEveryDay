@@ -1,3 +1,43 @@
+// Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
+//Don't change the order of the elements that are left.
+//Examples
+
+//* Input: [1,2,3,4,5], output = [2,3,4,5]
+//* Input: [5,3,2,1,4], output = [5,3,2,4]
+//* Input: [2,2,1,2,1], output = [2,2,2,1]
+
+
+function removeSmallest(numbers) {
+    //create an index that is equal to the indexOf all the nums in the array
+    //run the prototype for the array with Math.min, passing in numbers, which will return the min # in the array
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+    //by using slice, we can return a portion of the array the represent the index of the array that removes the lowest value in this case
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
+
+
+
+
+
+//My inital approach didn't account for all the parameters
+
+// function removeSmallest(numbers) {
+// //make a copy of the original array w/o mutation
+//   const copy = numbers.slice(0)
+// //find smallest value in array
+//   let smallestValue = numbers.indexOf(Math.min(numbers))
+// //remove smallest element in the array
+//   copy.slice(smallestValue, 1)
+// //return the copy
+//   return copy [];
+// }
+
+// //parameters:pass in nums, if empty array--return empty list
+// //return: don't mutate original, remove the smallest value
+// //examples: see examples
+// //notes: slice method for arrays returns a shallow copy
+
+
 //Make a simple function called greet that returns the most-famous "hello world!".
 
 function greet(word) {
