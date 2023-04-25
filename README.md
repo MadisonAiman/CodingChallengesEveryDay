@@ -8,8 +8,6 @@ Getting Started
 To get started with this repository, simply clone it to your local machine:
 
 
-Copy code
-git clone https://github.com/your-username/daily-coding-challenge.git
 Each day's problem will be contained in a separate folder, labeled with the date of the challenge (e.g., "2023-04-25"). Inside each folder, you will find a README file with the problem prompt and my solution to it.
 
 Running the Code
