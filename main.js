@@ -1,5 +1,13 @@
 
 
+//Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+function boolToWord( bool ){
+  return bool ? 'Yes':'No';
+} 
+//^ this function takes in a boolean and uses a ternary operator that asks us to return a bool if the right side is satisfifed, it will be yes. If the left side is
+// satisfied it will be no. 
+
+
 // Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
 //Don't change the order of the elements that are left.
 //Examples; these are what you can wrape in console.log(), true
