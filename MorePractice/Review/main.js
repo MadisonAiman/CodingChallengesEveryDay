@@ -1,3 +1,4 @@
+
 //Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
 //Examples:
@@ -5,6 +6,7 @@
 //solution('abc', 'd') // returns false
 
 const solution = (str, ending) => str.endsWith(ending);
+const solution = (str, ending) str.endsWith(ending)
 
 //parameters: take in a string, take in an ending 
 //return true if the string and ending have overlap
