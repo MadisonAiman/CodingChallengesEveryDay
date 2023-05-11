@@ -1,3 +1,4 @@
+//JS
 //This JavaScript code defines a function named sumArray that takes in an array of numbers as its input and returns the sum of all the elements in the array,
 //excluding the smallest and largest elements.
 //Let's break down the code step by step:
