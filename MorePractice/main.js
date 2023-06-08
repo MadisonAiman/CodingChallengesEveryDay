@@ -1,5 +1,25 @@
 //Today's codewars is a review
 
+
+
+function areYouPlayingBanjo(name){
+    //created a function describing what it will return
+    const predicate = name[0].toLowerCase() === 'r' ? 'plays banjo' : 'does not play banjo'
+    //we set a const for a variable called predicate
+    //when we pass in name, it will grab the first character in the string (name[0])
+    //we want to invoke the .toLowerCase() so that the 1st character in the string will always be lower case
+    //we set it equal in type and value (===) so that if it is r, it returns 'plays banjo'
+    //if not equal in type in value to r, we say to state 'does not play banjo'
+    return name + predicate;
+    //we return the name + predicate so that it reads "name play banjo/ name does not play banjo".
+}
+
+areYouPlayingBanjo(Rob) 
+//call the function to pass in the name Rob which will return "Rob plays Banjo"
+areYouPlayingBanjo(Sharon)
+//call the function to pass in the name Sharon which will return "Sharon does not play Banjo"
+
+
 //Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
 //For example, for [1, 2, 2] it should return 9 because 12+22+22=91^2 + 2^2 + 2^2 = 912+22+22=9.
