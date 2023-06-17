@@ -1,19 +1,31 @@
 //
-
+/**
+ * Class SmallestIntegerFinder: Represents a utility class for finding the smallest integer in an array.
+ */
 class SmallestIntegerFinder {
+  /**
+   * findSmallestInt(args): Finds the smallest integer in the given array of integers.
+   *
+   * @param {number[]} args - An array of integers.
+   * @returns {number} - The smallest integer in the array.
+   */
   findSmallestInt(args) {
+    // Initialize the variable 'smallest' with the first element of the array
     let smallest = args[0];
 
+    // Iterate through the array starting from the second element
     for (let i = 1; i < args.length; i++) {
+      // Check if the current element is smaller than the current smallest value
       if (args[i] < smallest) {
+        // Update the 'smallest' value if a smaller element is found
         smallest = args[i];
       }
     }
 
+    // Return the smallest integer found in the array
     return smallest;
   }
 }
-
 
 //Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
