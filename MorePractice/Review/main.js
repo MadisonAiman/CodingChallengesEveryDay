@@ -1,4 +1,20 @@
-//
+// Take a string and convert it to upper case: 
+
+function makeUpperCase(str) {
+  //here we have the function and pass in the parameter, which is a string
+  let upperCaseStr = str.toUpperCase();
+  //We want to convert the string no matter what it is so upper case
+  //So, we set the variable upperCaseStr equal to the str and the method of toUpperCase()
+  return upperCaseStr;
+  //lastly we return the function upperCaseStr
+}
+//Parameters: only a str will be passed in, and it will only be returned as only upper case
+//Return: only upper case of the string
+//Examples: pass in "word": WORD
+//Pass in "ChIcKEn": CHICKEN
+//P code: we know that we need to use a method in order to get the string in all caps
+//we know that we need a variable of the string to be equal to the method + string
+//We can try to do something like let Rhino = str.toUpperCase();
 /**
  * Class SmallestIntegerFinder: Represents a utility class for finding the smallest integer in an array.
  */
