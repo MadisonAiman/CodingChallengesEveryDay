@@ -15,12 +15,12 @@ function repeatStr (n, s) {
 //or with a simple for loop
 
 
-function repeatStr (n, s) {
-  var text = '';
-  for(var i = 0; i < n; ++i){
-    text += s;
+function repeatStr (n, s) { //We are taking in a number and a string
+  var text = ''; //here we create a variable text and set it equal to the string
+  for(var i = 0; i < n; ++i){ //using a for loop, we start the var at 0, when var exceeds the number, n we stop the loop; we count the loop adding one each time we cycle through
+    text += s; //here we set the variable text to equal or increase by one to the string (or s)
   }
-  return text;
+  return text; //finally, we return the number as a string per the prompt
 }
 
 
