@@ -10,7 +10,15 @@ function repeatStr (n, s) {
   return s.repeat(n);
 }
 
+
 //By using the repeat method, it will return S the same number of time that N is passed through
+//s.repeat(n): This line uses the repeat method of the String object to repeat the string s n times. The repeat method returns a new string that consists of s repeated n times.
+
+//return s.repeat(n): The resulting repeated string is then returned as the output of the function.
+
+//The purpose of the repeatStr function is to repeat a given string s n number of times and return the repeated string. For example, if n is 3 and s is "abc", the function will return "abcabcabc" since the string "abc" is repeated 3 times.
+
+//The provided solution is concise and leverages the built-in repeat method of JavaScript strings, which simplifies the code and makes it more efficient.
 
 //or with a simple for loop
 
