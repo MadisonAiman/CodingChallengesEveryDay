@@ -6,6 +6,16 @@ function squareSum(numbers){
     return numbers.reduce((acc,curr)=> acc + curr * curr, 0)
 } 
 
+
+//numbers.reduce((acc, curr) => acc + curr * curr, 0): This line uses the reduce method of the numbers array to perform the calculation. The reduce method applies a function to each element of the array, accumulating a single value as a result. In this case, the function (acc, curr) => acc + curr * curr calculates the sum of the squares.
+
+//acc represents the accumulator, which keeps track of the running sum.
+//curr represents the current element being processed.
+//acc + curr * curr calculates the sum of the accumulator and the square of the current element.
+//The second argument of reduce, 0, is the initial value of the accumulator (acc). It starts with a value of 0.
+
+//The calculated sum of the squares is then returned as the output of the function.
+
 //In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 function makeNegative(num){
  return num > 0 ? num * -1 : num;
