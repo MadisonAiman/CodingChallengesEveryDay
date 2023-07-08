@@ -97,8 +97,8 @@ function abbrevName(name){
  //parameters are to take in a name
 //Return/Results are to convert the name into intials
 //examples Sam Harris = S.H 
-//walkthrough: first we make a new variable name that accounts for splitting the first and last name into two groups
-//then we will need to sift through the characters based on the first index since we just want the first letter of the first name and the first letter of the last name
+//walkthrough: first we make a new variable name that accounts for splitting the first and last name into two groups so we sift
+//through the characters based on the first index since we just want the first letter of the first name and the first letter of the last name
 //By making it an array like nameArray[0][0] this tells us to grab the first item in the array, Sam, and then grab the first letter which is S. 
 //Then we need to grab the second item in the array which is Harris and only grab the H. 
 //we use the + to concatenate or glue the results of S and H together with a period. 
